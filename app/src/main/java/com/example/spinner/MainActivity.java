@@ -3,6 +3,7 @@ package com.example.spinner;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -38,6 +39,15 @@ public class MainActivity extends AppCompatActivity {
 
         CustomAdapter customAdapter = new CustomAdapter(this, flags, countryName, currencyName);
         spinner.setAdapter(customAdapter);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String value = spinner.getSelectedItem().toString();
+                setTextView.setText(value);
+            }
+        });
     }
 
 }
