@@ -12,16 +12,20 @@
         <item>Red Crse</item>
         <item>Suriname </item>
         <item>Turkey </item>
-
-        <item>America</item>
-        <item>Austria</item>
-        <item>azerbania </item>
-        <item>Canada</item>
-        <item>Georgia </item>
-        <item>Nepal </item>
-        <item>Netherland </item>
-        <item>Red Crse</item>
-        <item>Suriname </item>
-        <item>Turkey </item>
     </string-array>
+
+    <string-array name="currencyName">
+        <item>USD</item>
+        <item>AUSD</item>
+        <item>Real </item>
+        <item>Dl</item>
+        <item>COe </item>
+        <item>Rupi </item>
+        <item>NAbs </item>
+        <item>Holik</item>
+        <item>Aus </item>
+        <item>RDY </item>
+    </string-array>
+
+
 </resources>
