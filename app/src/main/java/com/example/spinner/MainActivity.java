@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Spinner spinners;
+    private Spinner spinner;
     String[] countryName;
     String[] currencyName;
 
@@ -20,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.canada, R.drawable.georgia, R.drawable.nepal, R.drawable.netherlands,
             R.drawable.red_crse, R.drawable.suriname, R.drawable.turkey};
 
-    private Button buttonss;
+    private Button button;
 
-    private TextView setTextViewss;
+    private TextView setTextView;
 
     private boolean isFirstItemSelected = true;
 
@@ -35,16 +35,16 @@ public class MainActivity extends AppCompatActivity {
 
         currencyName = getResources().getStringArray(R.array.currencyName);
 
-        spinners = findViewById(R.id.spinnerId);
-        buttonss = findViewById(R.id.buttonId);
-        setTextViewss = findViewById(R.id.textViewId);
+        spinner = findViewById(R.id.spinnerId);
+        button = findViewById(R.id.buttonId);
+        setTextView = findViewById(R.id.textViewId);
 
 
 
         CustomAdapter customAdapter = new CustomAdapter(this, flags, countryName, currencyName);
-        spinners.setAdapter(customAdapter);
+        spinner.setAdapter(customAdapter);
 
-        spinners.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 if (isFirstItemSelected){
